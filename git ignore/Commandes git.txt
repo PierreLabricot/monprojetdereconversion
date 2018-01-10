@@ -1,0 +1,54 @@
+//* Synthèse des commandes git */
+
+git status //*indique le chemin ouvert, les fichiers suivi et non suivi, les prochains ajouts*/
+
+git log //*voir l'historique des versions */
+
+git add monfichier //*ajoute ou mettre à jour le fichier à l'index git*/
+
+git commit -m //* permet de précisier l'objet du commit (modif fichier)*/
+
+git log --graph //*voir l'architecture de l'historique*/
+
+git diff //*voir les différences entre commit*/
+
+//*indexer les modifs de tous les fichiers*/
+git add --all
+git add -A 
+
+git rm nomdudossier //*supprimer un fichier rm=remove*/
+
+
+//*remote pour sauvegarder un fichier sur un serveur externe github par exemple*/
+
+
+git clone lienfournieparGitHub //*pour suivre un répertoire en local*/
+
+git push origin master //*envoyer les modifs sur le répertoire GitHub*/
+
+git pull origin master //*récupérer les modifs du répertoire GitHub*/
+
+git branch nouvelle-branche //* créer une branche dans le répertoire master*/
+
+git branch //* voir les branches dans le répertoire master distinguer la position actuelle par étoile*/
+
+git checkout nouvelle-branche //* se placer dans cette branche*/
+
+git checkout -b nouvelle-branhce //* créer et se placer dans cette branche*/
+
+git checkout brancheA //*se positionner sur la branche A*/
+git merge brancheB //*fusionner les branche A et B*/
+
+git branch -d ma-branche //*supprimer une branche*/
+git blame nomdufichier.extentsion //*savoir qui a fait la modif*/
+git show shaducommit //*montrer les détails du commit*/
+
+.gitignore //*pour lister les fichiers à ignorer pour ne pas les versionner en ligne*/
+
+git stash //*mettre de côté un état d'avancement avant un commit*/
+
+
+git stash pop //*revenir au fichier mis de côté*/
+git stash apply //*revenir au fichier en gardant de côté les modifs*/
+
+
